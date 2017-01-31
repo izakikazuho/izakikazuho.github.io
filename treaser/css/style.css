@@ -1,0 +1,54 @@
+@@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: YuGothic, Meiryo, sans-serif;
+    background-color: #333;
+}
+
+.titlewrapper {
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 210px;
+}
+
+.toplogo {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 186.67px;
+    background: url('../images/tsukimidai.svg') no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.toplogo span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.subtitle {
+    position: relative;
+    padding-top: 5px;
+    font-size: 0.8em;
+    font-family: Abel;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}

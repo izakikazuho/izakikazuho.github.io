@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var ua = navigator.userAgent;
+        if (ua.indexOf('iPad') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') < 0)) {
+            // タブレット
+            document.write('<meta name="viewport" content="width=1024px,user-scalable=no">');
+        } else {
+            // その他
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">');
+        }
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>月見台46 公式サイト</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fontsの読みこみ-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <!--TypeKitの読みこみ-->
+    <script src="https://use.typekit.net/ylt5sbp.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <!--Font Awesomeの読みこみ-->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <!--JQueryの読みこみ-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Remodal-->
+    <link rel="stylesheet" href="remodal/remodal.css">
+    <link rel="stylesheet" href="remodal/remodal-default-theme.css">
+    <script src="remodal/remodal.min.js"></script>
+</head>
+
+<body>
+    <!--Background Video-->
+    <video id="bg-video" autoplay loop muted>
+        <source src="videos/bg_video2.mp4" type="video/mp4">
+    </video>
+    <header id="firstview">
+        <div class="moviecover"></div>
+        <div class="titlewrapper">
+            <h1 class="toplogo">
+        <span>月見台46</span>
+      </h1>
+            <p class="subtitle">Official Web Site</p>
+        </div>
+        <a class="scroll_btn" href="#concept"><span></span></a>
+    </header>
+    <div id="menu">
+        <span class="menuline"></span>
+        <h1 class="menulogo"><a href="#firstview">月見台46</a></h1>
+        <nav class="global-nav">
+            <ul>
+                <li class="nav-item"><a href="#concept">CONCEPT</a></li>
+                <li class="nav-item"><a href="#member">MEMBER</a></li>
+                <li class="nav-item"><a href="#photo">PHOTO</a></li>
+                <li class="nav-item"><a href="#live">LIVE</a></li>
+                <li class="nav-item"><a href="#producer">PRODUCER</a></li>
+                <li class="nav-item"><a href="#staff">STAFF</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="containts">
+        <section id="concept" class="clearfix">
+            <div class="concept_wrapper">
+                <div class="concept_title_wrapper fadein">
+                    <div class="concept_title concept_title_top">
+                        30分間だけ
+                    </div>
+                    <div class="concept_title concept_title_bottom">
+                        本気アイドル
+                    </div>
+                </div>
+                <a data-remodal-target="modal_concept">
+                    <img class="concept_image fadein" src="images/concept.jpg" alt="月見台46"></a>
+                <div class="remodal modal_concept" data-remodal-id="modal_concept" data-remodal-options="hashTracking:false">
+                    <img src="images/concept.jpg" alt="">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                </div>
+                <p class="concept_sentence fadein">
+                    「Banditzのみんなに、<br class="br_sp">アイドルの楽しさを知ってほしい」<br> プロデューサー 伊﨑一帆の思いから始動した、<br> ”Banditz 坂道プロジェクト”<br><br> たった30分間、一日限りのライブのために、
+                    <br>５人の少女たちが選出された。<br><br> 「たかがサークルのアイドルコピバン」<br class="br_sp">にとどまらない
+                    <br> 本気の青春を感じてください。
+                </p>
+            </div>
+        </section>
+        <section id="member">
+            <h2 class="heading member_head">MEMBER</h2>
+            <div class="member_wrapper">
+                <div class="member_box fadein">
+                    <a data-remodal-target="modal_akari">
+                        <img class="member_img" src="images/fujimoto_akari.jpg" alt=""></a>
+                    <p class="member_name">藤本明莉</p>
+                    <div class="remodal" data-remodal-id="modal_akari" data-remodal-options="hashTracking:false">
+                        <img src="images/fujimoto_akari.jpg" alt="">
+                        <h3>藤本明莉</h3>
+                        <div class="member_about">
+                            <p><span class="item ">生年月日</span>1997年1月21日</p>
+                            <p><span class="item ">出身地</span>大阪府</p>
+                            <p><span class="item ">身長</span>158cm</p>
+                        </div>
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                    </div>
+                </div>
+                <div class="member_box fadein">
+                    <a data-remodal-target="modal_nozomi">
+                        <img class="member_img" src="images/uemura_nozomi.jpg" alt=""></a>
+                    <p class="member_name">樹村希</p>
+                    <div class="remodal" data-remodal-id="modal_nozomi" data-remodal-options="hashTracking:false">
+                        <img src="images/uemura_nozomi.jpg" alt="">
+                        <h3>樹村希</h3>
+                        <div class="member_about">
+                            <p><span class="item ">生年月日</span>1996年3月24日</p>
+                            <p><span class="item ">出身地</span>大阪府</p>
+                            <p><span class="item ">身長</span>162cm</p>
+                        </div>
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                    </div>
+                </div>
+                <div class="member_box fadein">
+                    <a data-remodal-target="modal_ririko">
+                        <img class="member_img" src="images/inoue_ririko.jpg" alt=""></a>
+
+                    <p class="member_name">井上璃々子</p>
+                    <div class="remodal" data-remodal-id="modal_ririko" data-remodal-options="hashTracking:false">
+                        <img src="images/inoue_ririko.jpg" alt="">
+                        <h3>井上璃々子</h3>
+                        <div class="member_about">
+                            <p><span class="item ">生年月日</span>1996年12月1日</p>
+                            <p><span class="item ">出身地</span>大阪府</p>
+                            <p><span class="item ">身長</span>158cm</p>
+                        </div>
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="member_wrapper member_last">
+                <div class="member_box fadein">
+                    <a data-remodal-target="modal_serina">
+                        <img class="member_img" src="images/honda_serina.jpg" alt=""></a>
+
+                    <p class="member_name">本田芹菜</p>
+                    <div class="remodal" data-remodal-id="modal_serina" data-remodal-options="hashTracking:false">
+                        <img src="images/honda_serina.jpg" alt="">
+                        <h3>本田芹菜</h3>
+                        <div class="member_about">
+                            <p><span class="item ">生年月日</span>1994年6月24日</p>
+                            <p><span class="item ">出身地</span>大阪府</p>
+                            <p><span class="item ">身長</span>161cm</p>
+                        </div>
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                    </div>
+                </div>
+                <div class="member_box fadein">
+                    <a data-remodal-target="modal_haruna">
+                        <img class="member_img" src="images/watanabe_haruna.jpg" alt=""></a>
+                    <p class="member_name">渡邉陽南</p>
+                    <div class="remodal" data-remodal-id="modal_haruna" data-remodal-options="hashTracking:false">
+                        <img src="images/watanabe_haruna.jpg" alt="">
+                        <h3>渡邉陽南</h3>
+                        <div class="member_about">
+                            <p><span class="item ">生年月日</span>1996年5月14日</p>
+                            <p><span class="item ">出身地</span>兵庫県</p>
+                            <p><span class="item ">身長</span>155.5cm</p>
+                        </div>
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="photo">
+            <a href="https://tsukimidai46.tumblr.com/">
+                <div class="photo_bg"></div>
+                <div class="photo_title">
+                    <h2 class="photo_head">PHOTO GALLERY</h2>
+                    <p>フォトグラファー 播磨尚希による<br>撮り下ろし写真を随時更新中。</p>
+                </div>
+            </a>
+        </section>
+        <section id="live" class="clearfix">
+            <h2 class="heading">LIVE</h2>
+            <div class="fadein live_wrapper">
+                <div class="live_wrapper_left">
+                    <h3 class="live_name">Banditz 送るライブ2017</h3>
+                    <p class="live_date">2017.02.08 WED</p>
+                    <div class="live_about">
+                        <p><span class="item">PLACE</span>中津 Vi-Code</p>
+                        <div class="live_time">
+                            <p><span class="item">OPEN</span>16:30</p>
+                            <p><span class="item">START</span>17:00</p>
+                        </div>
+                        <p><span class="item">FEE</span>入場無料 1ドリンク制 ¥500</p>
+                        <p>※月見台46の出演順は1番目の予定です。</p>
+                        <div class="musicians clearfix">
+                            <h4>伊﨑一帆音楽団</h4>
+                            <div class="musicians_table">
+                                <p><span class="item kantoku">音楽監督</span>伊﨑一帆</p>
+                                <p><span class="item">Dr</span>繁戸一輝</p>
+                                <p><span class="item">Ba</span>小畑翔</p>
+                            </div>
+                            <div class="musicians_table">
+                                <p><span class="item">Gt</span>田口隼人</p>
+                                <p><span class="item">Gt</span>北村景一</p>
+                                <p><span class="item">Cho</span>和田芙卯子</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1639.9016437895564!2d135.4919618!3d34.7101412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6842197d729%3A0x94feb8609769b378!2sVi-code!5e0!3m2!1sja!2sjp!4v1485416023892" width="100%" height="440px"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="producer" class="clearfix">
+            <h2 class="heading">PRODUCER</h2>
+            <div class="producer_wrapper">
+                <img src="images/izakikazuho.jpg" alt="伊﨑一帆">
+                <div class="producer_right">
+                    <h3>伊﨑一帆</h3>
+                    <p>大学生。</p>
+                    <p>小学生時代から放送委員会委員長として頭角を現し、数々の番組構成を手がける。</p>
+                    <p>14年4月、関西大学軽音楽サークル Banditzに加入。ベーシスト・キーボーディストとして、"おっぱいマシンガンズ"をはじめ、"自分革命"、"ジャスコ"、"犬でもわかる！調教師戸村のバター犬講座"、"Johnny's Jr."など、数多くのヒットバンドに参加。</p>
+                    <p>15年11月、同サークル WEB係就任。</p>
+                    <p>新入生勧誘、「SOUNDSHOCK'16オーディション」などの広告戦略、"時を駆けるHARA"ライブ映像制作、「12期感謝祭 Vi-codeミニマラソン」を手がけるなど、幅広く活躍中。アイドルグループ"月見台46"総合プロデューサーを務める。</p>
+                    <p>著書に、「Googleフォト 利用ガイド」。</p>
+                    <p>Banditz 名誉PA。</p>
+
+                </div>
+            </div>
+        </section>
+        <section id="staff">
+            <h2 class="heading staff_head">STAFF</h2>
+            <p>Total Producer - Kazuho Izaki</p>
+            <p>Co-Producer - Nozomi Uemura</p>
+            <p>Manager - Akeen Edwards</p>
+            <p>Web Director - Kazuho Izaki</p>
+            <p>Photographer, Creative Adviser - Naoki Harima</p>
+            <p>Hair & Make-up - Fuko Wada</p>
+            <p>Live Cordinator - Fuko Wada, Hiroaki Nakayama</p>
+            <p>Executive Producer - Wataru Inoue</p>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <p class="footer">©2017 Kazuho Izaki All Rights Reserved. </p>
+    </footer>
+
+    <!-- add padding-top when menu is fixed -->
+    <script type="text/javascript">
+        jQuery(function($) {
+
+            var nav = $('#menu'),
+                offset = nav.offset();
+
+            var sec = $('#containts');
+
+            $(window).on('scroll resize', function() {
+                if ($(window).scrollTop() > $(window).height()) {
+                    sec.addClass('containts-fixed')
+                    nav.addClass('fixed');
+                } else {
+                    sec.removeClass('containts-fixed');
+                    nav.removeClass('fixed');
+                }
+            });
+
+        });
+    </script>
+
+    <!-- smooth scroll -->
+    <script>
+        $(function() {
+            var windowWidth = $(window).width();
+            var windowSm = 600;
+            if (windowWidth <= windowSm) {
+                //メニューの高さ
+                $('a[href^="#"]').on('click', function() {
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top; //メニューの高さ分位置をずらす
+                    $("html, body").animate({
+                        scrollTop: position
+                    }, 450, "swing");
+                    return false;
+                });
+                //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+            } else {
+                var headerHight = 92; //メニューの高さ
+                $('a[href^="#"]').on('click', function() {
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHight; //メニューの高さ分位置をずらす
+                    $("html, body").animate({
+                        scrollTop: position
+                    }, 450, "swing");
+                    return false;
+                });
+
+            }
+
+        });
+    </script>
+
+    <!--fadein effect-->
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                $('.fadein').each(function() {
+                    var elemPos = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 150) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- viewport units fix for iOS -->
+    <script>
+        var agent = navigator.userAgent;
+        if (agent.search(/iPhone/) != -1 ||
+            agent.search(/iPad/) != -1 ||
+            agent.search(/iPod/) != -1) {
+            var iOSVh100 = window.innerHeight / 100 * 100;
+            $('header').css({
+                'height': (iOSVh100)
+            });
+        }
+    </script>
+</body>
+
+</html>
