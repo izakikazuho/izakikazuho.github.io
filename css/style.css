@@ -7,14 +7,18 @@ html {
     box-sizing: border-box;
 }
 
+
 /* clearfix */
+
 .clearfix:after {
     display: block;
     clear: both;
     content: "";
 }
 
+
 /* body */
+
 body {
     color: #fff;
     font-size: 1.4rem;
@@ -22,7 +26,7 @@ body {
     text-align: center;
     background-color: #000;
     -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #bg-video {
@@ -46,7 +50,8 @@ body {
         background-size: cover;
         background-position: center center;
         display: block;
-        position: absolute;;
+        position: absolute;
+        ;
         top: 0;
         left: 0;
         width: 100%;
@@ -59,6 +64,7 @@ body {
         display: none;
     }
 }
+
 
 /* menu for PC */
 
@@ -144,6 +150,7 @@ body {
     }
 }
 
+
 /* firstview */
 
 header {
@@ -179,7 +186,7 @@ header {
     display: inline-block;
     width: 150px;
     height: 186.67px;
-    background: url('../images/tsukimidai.svg') no-repeat;
+    background: url('../images/logo.svg') no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -301,7 +308,7 @@ section {
 }
 
 #containts {
-  position: relative;
+    position: relative;
 }
 
 .heading {
@@ -507,6 +514,7 @@ section {
     }
 }
 
+
 /* member */
 
 #member {
@@ -619,6 +627,7 @@ section {
     font-size: 0.9rem;
 }
 
+
 /* photo */
 
 #photo {
@@ -648,8 +657,8 @@ section {
     opacity: 0.5;
 }
 
-#photo > a:visited{
-  color: #fff;
+#photo>a:visited {
+    color: #fff;
 }
 
 @-webkit-keyframes bgscroll {
@@ -732,6 +741,7 @@ div.photo_title>p {
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
+
 
 /* live */
 
@@ -919,6 +929,7 @@ div.photo_title>p {
     }
 }
 
+
 /* producer */
 
 #producer {
@@ -1006,6 +1017,7 @@ div.photo_title>p {
     }
 }
 
+
 /* staff */
 
 #staff {
@@ -1039,6 +1051,7 @@ section#staff>p {
         font-size: 1rem;
     }
 }
+
 
 /* footer */
 
